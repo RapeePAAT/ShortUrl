@@ -74,11 +74,9 @@ app.put("/update/:id", async (req, res) => {
     const { id } = req.params;
   
     try {
-      // ดึงข้อมูล URL ที่ต้องการอัปเดตจากฐานข้อมูล
       const result = await db.query("SELECT * FROM public.url WHERE id = $1", [id]);
         
       if (result.rows.length > 0) {
-        // เพิ่มจำนวนคลิก (click) ของ URL ที่ต้องการอัปเดต
         const updateResult = await db.query("UPDATE public.url SET click = click + 1 WHERE id = $1", [id]);
         res.status(200).json({ message: "URL updated successfully" });
       } else {
