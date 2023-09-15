@@ -39,7 +39,10 @@ CREATE TABLE url {
 	clicks int
 }
 
-ทั้งหมดก็ประมาณนี้ครับ 
+เรื่มโปรเจ็ต
+
+npm start 
+
 
 ENJOY KUB \|''|/
 
