@@ -1,5 +1,5 @@
 const  { Pool, Client } = require('pg');
-const path = require('path'); // อาจจะต้องนำเข้าโมดูล path เพื่อใช้งาน path.join
+const path = require('path'); 
 
 const dotenvResult = require('dotenv').config({
   override: true,
