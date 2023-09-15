@@ -54,7 +54,7 @@ function App() {
       try {
         const response = await fetch("http://localhost:5000/api/get-all-url");
         const getallUrl = await response.json();
-        setData(getallUrl); // กำหนดข้อมูลลงใน state data
+        setData(getallUrl); 
       } catch (error) {
         console.error(error);
       }
@@ -108,7 +108,7 @@ function App() {
           
         <QRCode
           value={item.orginal_url}
-          size={64} // กำหนดขนาดของ QR code ตามที่คุณต้องการ
+          size={64} 
         />
       </td>
       </tr>
