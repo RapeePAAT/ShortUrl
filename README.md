@@ -39,7 +39,7 @@ CREATE TABLE url {
 	clicks int
 }
 
-เรื่มโปรเจ็ต
+เรื่มโปรเจ็ค
 
 npm start 
 
