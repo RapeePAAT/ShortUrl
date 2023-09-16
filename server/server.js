@@ -2,7 +2,7 @@ const express = require('express')
 const shortid = require('shortid')
 const app = express();
 const db = require('./model/db')
-const port = 5000;
+const port = 5000 || process.env.port;
 const bodyParser = require('body-parser')
 const cors = require('cors')
 
